@@ -1,6 +1,6 @@
 {
   "name": "flow.js",
-  "version": "2.5.0",
+  "version": "infowrap-2.5.0",
   "main": "./dist/flow.js",
   "ignore": [
     "**/.*",
@@ -9,5 +9,8 @@
     "test",
     "tests",
     "samples"
-  ]
+  ],
+  "dependencies": {
+    "lodash": "git@github.com:infowrap/lodash.git#2.4.1"
+  }
 }
