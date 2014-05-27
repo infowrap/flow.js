@@ -1,6 +1,6 @@
 {
   "name": "flow.js",
-  "version": "infowrap-2.5.01",
+  "version": "infowrap-2.5.1",
   "main": "./dist/flow.js",
   "ignore": [
     "**/.*",

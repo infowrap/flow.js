@@ -535,8 +535,8 @@
         // Directories have name `.`
         // Ignore specified ignored filenames (configured via options) and already added files
         if (!_.contains(this.opts.ignoreFilenames, file.name || file.fileName)) {
-          if (!(file.size % 4096 === 0) &&
-            !this.getFromUniqueIdentifier(this.generateUniqueIdentifier(file))) {
+          // !(file.size % 4096 === 0) && -- this condition doesn't work for Android 4.3, files picked from 'Gallery' have size 0 !
+          if (!this.getFromUniqueIdentifier(this.generateUniqueIdentifier(file))) {
             var f = new FlowFile(this, file);
             if (this.fire('fileAdded', f, event)) {
               files.push(f);
