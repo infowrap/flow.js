@@ -11,6 +11,6 @@
     "samples"
   ],
   "dependencies": {
-    "lodash": "git@github.com:infowrap/lodash.git#2.4.1"
+    "lodash": "~3.10.1"
   }
 }
