@@ -534,7 +534,7 @@
       each(fileList, function (file) {
         // Directories have name `.`
         // Ignore specified ignored filenames (configured via options) and already added files
-        if (!_.contains(this.opts.ignoreFilenames, file.name || file.fileName)) {
+        if (!_.includes(this.opts.ignoreFilenames, file.name || file.fileName)) {
           if (file.size > 0 && !this.getFromUniqueIdentifier(this.generateUniqueIdentifier(file))) {
             var f = new FlowFile(this, file);
             if (this.fire('fileAdded', f, event)) {
@@ -1473,7 +1473,7 @@
    * Library version
    * @type {string}
    */
-  Flow.version = 'infowrap-2.5.3';
+  Flow.version = '2.5.6';
 
   if ( typeof module === "object" && module && typeof module.exports === "object" ) {
     // Expose Flow as module.exports in loaders that implement the Node
