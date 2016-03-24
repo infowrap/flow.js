@@ -8,7 +8,12 @@
     "bower_components",
     "test",
     "tests",
-    "samples"
+    "samples",
+    "CHANGELOG.md",
+    "karma.conf.js",
+    "package.json",
+    "src/*",
+    "Gruntfile.js"
   ],
   "dependencies": {
     "lodash": "~3.10.1"
